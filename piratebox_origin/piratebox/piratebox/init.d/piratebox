@@ -194,7 +194,7 @@ case "$1" in
 
     if [ -e $PIDFILE_RADVD ] ; then
 	log_daemon_msg "Stopping radvd..."
-	start-stop-daemon --stop --quite --pidfile $PIDFILE_RADVD
+	start-stop-daemon --stop --quiet --pidfile $PIDFILE_RADVD
   	log_end_msg $?
     fi
 
